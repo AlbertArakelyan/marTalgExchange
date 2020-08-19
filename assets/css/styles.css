@@ -415,6 +415,7 @@ button:focus {
 
 .tariffs__table_reserve sup {
   color: #fff;
+  margin-left: 3px;
 }
 
 .tariffs__table_reserve span sup {
@@ -1919,12 +1920,19 @@ button:focus {
   margin-bottom: 5px;
 }
 
-#details.confirm__table .table__details .table__details_property {
-  width: 45%;
-}
 
-#details.confirm__table .table__details .table__details_value {
-  width: 55%;
+#details.confirm__table .confirm__table_details {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+}
+#details.confirm__table .confirm__table_details .details__property,
+#details.confirm__table .confirm__table_details .details__value {
+  width: 100%;
+  padding: 2px 0;
+}
+#details.confirm__table .confirm__table_details .details__property {
+  border-right: none;
 }
 
 
