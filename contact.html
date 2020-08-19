@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/963175a595.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/common/header.css">
+  <link rel="stylesheet" href="./assets/common/main.css">
+  <link rel="stylesheet" href="./assets/common/footer.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Надежный интсрумент VipsellBit</title>
+</head>
+
+<body>
+  <!----------------------- Modal ----------------------->
+  <div class="login-modal hidden">
+    <div class="modal-content">
+      <button class="modal-content__close"><i class="fa fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-header__heading">
+          <i class="fa fa-user-circle-o"></i> Вход
+        </h3>
+        <p class="modal-header__register">
+          Нет аккаунта? <a href="./register.html">Регистрация</a>
+        </p>
+      </div>
+      <div class="modal-body">
+        <form class="login-form">
+          <div class="login-form__formgroup">
+            <label for="login" class="login-form__login_label">
+              Ваш логин
+            </label>
+            <input type="text" name="login" class="login-form__login_input" placeholder="Ваш логин">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="password" class="login-form__password_label">
+              Ваш пароль
+            </label>
+            <input type="password" name="password" class="login-form__password_input" placeholder="Ваш Пароль">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="nunber" class="login-form__confirm_label">
+              Введите цыфры
+            </label>
+            <div class="login-form__confirm_codeAndField">
+              <input name="number" type="text" class="login-form__confirm_field">
+              <img src="./assets/media/images/number.png" alt="numbers" class="login-form__cinfirm_code">
+            </div>
+          </div>
+          <button class="login-form__submit">
+            Войти
+          </button>
+          <a href="./recovery.html" class="login-form__forgetPassword">
+            Забыли пароль ?
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------- Modal ----------------------->
+  <div class="message-modal hidden">
+    <div class="modal-content">
+      Сообщение отправлено
+    </div>
+  </div>
+
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__content">
+        <h1 class="header__logo">
+          <a href="/"><img src="./assets/media/images/logo.png" alt="vipsellbit"></a>
+        </h1>
+        <div class="header__operatorBox">
+          <span class="header__operatorBox_oper">
+            <i class="fa fa-eercast" aria-hidden="true"></i> Оператор в сети
+          </span>
+          <span class="header__operatorBox_email">
+            <i class="fa fa-envelope"></i> info@vipsellbit.cc
+          </span>
+          <div class="header__burgerMenu_toggler">
+            <button>
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="header__loginReg">
+          <a href="./register.html" class="header__loginReg_reg">
+            <i class="fa fa-plus"></i> Регистрация
+          </a>
+          <button class="header__loginReg_login">
+            <i class="fa fa-user-circle-o"></i> Вход
+          </button>
+
+          <div class="header__burgerMenu collapsed">
+            <div class="container">
+              <ul class="burgerMenu__content">
+                <li class="nav__content_item">
+                  <a href="/">
+                    <i class="fa fa-rocket"></i> Главная
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./tariffs.html">
+                    <i class="fa fa-map-signs"></i> Тарифы
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./feedbacks.html">
+                    <i class="fa fa-child"></i> Отзывы
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./rules.html">
+                    <i class="fa fa-balance-scale"></i> Правила
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./news.html">
+                    <i class="fa fa-newspaper-o"></i> Новости
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./contact.html">
+                    <i class="fa fa-volume-control-phone"></i> Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav__content">
+        <li class="nav__content_item">
+          <a href="/">
+            <i class="fa fa-rocket"></i> Главная
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./tariffs.html">
+            <i class="fa fa-map-signs"></i> Тарифы
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./feedbacks.html">
+            <i class="fa fa-child"></i> Отзывы
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./rules.html">
+            <i class="fa fa-balance-scale"></i> Правила
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./news.html">
+            <i class="fa fa-newspaper-o"></i> Новости
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./contact.html">
+            <i class="fa fa-volume-control-phone"></i> Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="contact">
+    <div class="container">
+      <div class="contact__content">
+        <div class="contact__heading">
+          <h2 class="contact__heading_text">
+            <i class="fa fa-volume-control-phone"></i> Контакты
+          </h2>
+        </div>
+
+        <div class="contact__details">
+          <form class="contact__form">
+            <div class="contact__form_group">
+              <label for="name">Имя</label>
+              <input type="text" name="name" placeholder="Имя">
+            </div>
+            <div class="contact__form_group">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="contact__form_group">
+              <label for="topic">Тема</label>
+              <input type="text" name="topic" placeholder="Тема">
+            </div>
+            <div class="contact__form_group">
+              <label for="message">Сообщение</label>
+              <textarea name="message" rows="8" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="contact__form_submitCode">
+              <label for="numbers">Введите цыфры</label>
+              <div class="submitCode__fieldAndCode">
+                <input type="text" class="submitCode__field" name="numbers">
+                <img src="./assets/media/images/number.png" alt="numbers" class="sumbitCode__code">
+              </div>
+            </div>
+            <button class="contact__form_submit">
+              <i class="fa fa-paper-plane"></i> Отправить
+            </button>
+          </form>
+          <div class="contact__info">
+            <p class="contact__number">
+              <i class="fa fa-phone-square fa-lg"></i> +79851234567
+            </p>
+            <p class="contact__email">
+              <i class="fa fa-envelope fa-lg"></i> info@vipsellbit.cc
+            </p>
+            <p class="contact__workTime">
+              <i class="fa fa-clock-o fa-lg"></i> <b>Время работы: Круглосуточно 24/7/365</b>
+            </p>
+            <div class="contact__adress">
+              <p class="contact__adress_icon">
+                <i class="fa fa-map-marker fa-lg"></i> <b>Адрес EasyObme</b>
+              </p>
+              <p class="contact__adress_city">
+                Россия, г. Москва
+              </p>
+              <p class="contact__adress_street">
+                Большая Черёмушкинская, 21/15
+              </p>
+            </div>
+            <div class="contact__agent">
+              <img src="./assets/media/images/customer-agent.jpg" alt="customer agent">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <h4 class="footer__year">
+          2020 Обменник валют
+        </h4>
+        <ul class="footer__nav">
+          <li class="footer__nav_link"><a href="./index.html">Главная</a></li>
+          <li class="footer__nav_link"><a href="./tariffs.html">Тарифы</a></li>
+          <li class="footer__nav_link"><a href="./feedbacks.html">Отзывы</a></li>
+          <li class="footer__nav_link"><a href="./rules.html">Правила</a></li>
+          <li class="footer__nav_link"><a href="./news.html">Новости</a></li>
+          <li class="footer__nav_link"><a href="./contact.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/963175a595.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/common/header.css">
+  <link rel="stylesheet" href="./assets/common/main.css">
+  <link rel="stylesheet" href="./assets/common/footer.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Надежный интсрумент VipsellBit</title>
+</head>
+
+<body>
+  <div class="login-modal hidden">
+    <div class="modal-content">
+      <button class="modal-content__close"><i class="fa fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-header__heading">
+          <i class="fa fa-user-circle-o"></i> Вход
+        </h3>
+        <p class="modal-header__register">
+          Нет аккаунта? <a href="./register.html">Регистрация</a>
+        </p>
+      </div>
+      <div class="modal-body">
+        <form class="login-form">
+          <div class="login-form__formgroup">
+            <label for="login" class="login-form__login_label">
+              Ваш логин
+            </label>
+            <input type="text" name="login" class="login-form__login_input" placeholder="Ваш логин">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="password" class="login-form__password_label">
+              Ваш пароль
+            </label>
+            <input type="password" name="password" class="login-form__password_input" placeholder="Ваш Пароль">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="nunber" class="login-form__confirm_label">
+              Введите цыфры
+            </label>
+            <div class="login-form__confirm_codeAndField">
+              <input name="number" type="text" class="login-form__confirm_field">
+              <img src="./assets/media/images/number.png" alt="numbers" class="login-form__cinfirm_code">
+            </div>
+          </div>
+          <button class="login-form__submit">
+            Войти
+          </button>
+          <a href="./recovery.html" class="login-form__forgetPassword">
+            Забыли пароль ?
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__content">
+        <h1 class="header__logo">
+          <a href="/"><img src="./assets/media/images/logo.png" alt="vipsellbit"></a>
+        </h1>
+        <div class="header__operatorBox">
+          <span class="header__operatorBox_oper">
+            <i class="fa fa-eercast" aria-hidden="true"></i> Оператор в сети
+          </span>
+          <span class="header__operatorBox_email">
+            <i class="fa fa-envelope"></i> info@vipsellbit.cc
+          </span>
+          <div class="header__burgerMenu_toggler">
+            <button>
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="header__loginReg">
+
+          <a href="./register.html" class="header__loginReg_reg">
+            <i class="fa fa-plus"></i> Регистрация
+          </a>
+          <button class="header__loginReg_login">
+            <i class="fa fa-user-circle-o"></i> Вход
+          </button>
+
+          <div class="header__burgerMenu collapsed">
+            <div class="container">
+              <ul class="burgerMenu__content">
+                <li class="nav__content_item">
+                  <a href="/">
+                    <i class="fa fa-rocket"></i> Главная
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./tariffs.html">
+                    <i class="fa fa-map-signs"></i> Тарифы
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./feedbacks.html">
+                    <i class="fa fa-child"></i> Отзывы
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./rules.html">
+                    <i class="fa fa-balance-scale"></i> Правила
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./news.html">
+                    <i class="fa fa-newspaper-o"></i> Новости
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./contact.html">
+                    <i class="fa fa-volume-control-phone"></i> Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav__content">
+        <li class="nav__content_item">
+          <a href="/">
+            <i class="fa fa-rocket"></i> Главная
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./tariffs.html">
+            <i class="fa fa-map-signs"></i> Тарифы
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./feedbacks.html">
+            <i class="fa fa-child"></i> Отзывы
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./rules.html">
+            <i class="fa fa-balance-scale"></i> Правила
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./news.html">
+            <i class="fa fa-newspaper-o"></i> Новости
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./contact.html">
+            <i class="fa fa-volume-control-phone"></i> Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="confirm">
+    <div class="container">
+      <div class="confirm__content">
+        <h2 class="confirm__heading">
+          Обмен <img src="./assets/media/images/payeer.png" alt="payeer">
+          Payeer <i class="fa fa-long-arrow-right"></i>
+          <img src="./assets/media/images/bitcoin.png" alt="bitcoin"> Bitcoin
+        </h2>
+        <p class="confirm__warning">
+          Внимательно проверьте правильность платежных данных перед созданием заявки
+        </p>
+        <h3 class="confirm__subheading">
+          Подтверждение заявки
+        </h3>
+        <div class="confirm__table">
+            <table class="confirm__table_details">
+              <tbody>
+                <tr class="table__details">
+                  <td class="table__details_property">
+                    <i class="fa fa-arrow-up" style="color: #8dc6fb"></i> Отдаете:
+                  </td>
+                  <td class="table__details_value">
+                    <span><b>10000</b></span> RUB
+                  </td>
+                </tr>
+                <tr class="table__details">
+                  <td class="table__details_property">
+                    Номер Payeer Кошелка:
+                  </td>
+                  <td class="table__details_value">
+                    P5249631492
+                  </td>
+                </tr>
+                <tr class="table__details">
+                  <td class="table__details_property">
+                    <i class="fa fa-arrow-down" style="color: #5cb85c"></i> Получаете:
+                  </td>
+                  <td class="table__details_value">
+                    <span><b>0.01175234</b></span> BTC
+                  </td>
+                </tr>
+                <tr class="table__details">
+                  <td class="table__details_property">
+                    Номер Кошелка:
+                  </td>
+                  <td class="table__details_value">
+                    nNfUi34h78Iudh782y87Yeg89sJgohGsd8h8wffsdI9T
+                  </td>
+                </tr>
+                <tr class="table__details">
+                  <td class="table__details_property">
+                    Курс обмена:
+                  </td>
+                  <td class="table__details_value">
+                    850894.22 RUB - 1 BTC
+                  </td>
+                </tr>
+                <tr class="table__details">
+                  <td class="table__details_property">
+                    E-mail
+                  </td>
+                  <td class="table__details_value">
+                    user@example.com
+                  </td>
+                </tr>
+                <tr class="table__details">
+                  <td class="table__details_property final">
+                    К оплате:
+                  </td>
+                  <td class="table__details_value final">
+                    10000 RUB
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <a href="./exchange-pay.html" class="confirm__button">
+          Создать заявку
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <h4 class="footer__year">
+          2020 Обменник валют
+        </h4>
+        <ul class="footer__nav">
+          <li class="footer__nav_link"><a href="./index.html">Главная</a></li>
+          <li class="footer__nav_link"><a href="./tariffs.html">Тарифы</a></li>
+          <li class="footer__nav_link"><a href="./feedbacks.html">Отзывы</a></li>
+          <li class="footer__nav_link"><a href="./rules.html">Правила</a></li>
+          <li class="footer__nav_link"><a href="./news.html">Новости</a></li>
+          <li class="footer__nav_link"><a href="./contact.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>

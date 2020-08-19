@@ -1,0 +1,177 @@
+/*
+* header
+*/
+
+.header {
+  padding: 10px 0;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.header__logo a {
+  height: 0;
+}
+.header__logo img {
+  display: block;
+}
+
+.header__operatorBox {
+  background: #f5f8fa;
+  padding: 16px 24.6px;
+  /* margin-top: 10px; */
+  border-radius: 10px;
+  color: #f49f18;
+}
+.header__operatorBox_oper {
+  margin-right: 9.6px;
+}
+.header__operatorBox_oper > i, .header__operatorBox_email > i {
+  margin-right: 5px;
+}
+.header__operatorBox_oper > i {
+  animation: operOnlineAnim .2s ease-in-out 2s infinite alternate;
+}
+
+@keyframes operOnlineAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header__loginReg {
+  font-weight: bold;
+  /* margin-top: 12px; */
+  display: flex;
+  font-size: 14px;
+}
+.header__loginReg_reg {
+  position: relative;
+  padding: 7px 10px;
+  margin-right: 6px;
+  color: #FFFFFF;
+  background-color: #f25114;
+  border-radius: 5px;
+}
+.header__loginReg_reg::after,
+.header__loginReg_login::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.header__loginReg_reg:hover::after,
+.header__loginReg_login:hover::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header__loginReg_login {
+  position: relative;
+  padding: 7px 10px;
+  color: #f49f18;
+  border: solid 1px #f49f18;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+.header__loginReg_login:hover {
+  cursor: pointer;
+}
+
+
+
+.header__burgerMenu_toggler {
+  display: none;
+}
+.header__burgerMenu_toggler button:hover {
+  cursor: pointer;
+}
+
+.header__burgerMenu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  background: linear-gradient(77deg, #f26514, #f59a17, #f24412, #f12711);
+  width: 100vw;
+  overflow: hidden;
+  z-index: 999;
+  height: 277px;
+  transition: height .4s ease-in-out;
+}
+
+.header__burgerMenu.collapsed {
+  height: 0;
+}
+
+
+.header__myAccount {
+  position: relative;
+}
+.header__myAccount_btn {
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #EEE;
+  font-size: 14px;
+  background-color: #fff;
+  outline: none;
+}
+.header__myAccount_btn:hover {
+  cursor: pointer;
+  background-color: rgba(221, 221, 221, 0.2);
+
+}
+.header__myAccount_btn.show {
+  background-color: rgba(221, 221, 221, 0.7);
+}
+
+.myAccount__nav {
+  position: absolute;
+  top: 105%;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  width: 225px;
+}
+.myAccount__nav.show {
+  display: block;
+}
+.myAccount__nav_item {
+  margin: 15px 0;
+  width: 100%;
+}
+.myAccount__nav_item:hover {
+  background-color: #5f5f5f15;
+}
+.myAccount__nav_item a {
+  padding: 5px 10px;
+  color: #262626 !important;
+  font-weight: 100 !important;
+  width: 100%;
+  display: block;
+}
+
+
+
+/*
+*** Burger menu spacing
+*/
+.burgerMenu__content .nav__content_item a {
+  padding: 10px 20px;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/963175a595.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/common/header.css">
+  <link rel="stylesheet" href="./assets/common/main.css">
+  <link rel="stylesheet" href="./assets/common/footer.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Надежный интсрумент VipsellBit</title>
+</head>
+
+<body>
+  <div class="login-modal hidden">
+    <div class="modal-content">
+      <button class="modal-content__close"><i class="fa fa-times"></i></button>
+      <div class="modal-header">
+        <h3 class="modal-header__heading">
+          <i class="fa fa-user-circle-o"></i> Вход
+        </h3>
+        <p class="modal-header__register">
+          Нет аккаунта? <a href="./register.html">Регистрация</a>
+        </p>
+      </div>
+      <div class="modal-body">
+        <form class="login-form">
+          <div class="login-form__formgroup">
+            <label for="login" class="login-form__login_label">
+              Ваш логин
+            </label>
+            <input type="text" name="login" class="login-form__login_input" placeholder="Ваш логин">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="password" class="login-form__password_label">
+              Ваш пароль
+            </label>
+            <input type="password" name="password" class="login-form__password_input" placeholder="Ваш Пароль">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="nunber" class="login-form__confirm_label">
+              Введите цыфры
+            </label>
+            <div class="login-form__confirm_codeAndField">
+              <input name="number" type="text" class="login-form__confirm_field">
+              <img src="./assets/media/images/number.png" alt="numbers" class="login-form__cinfirm_code">
+            </div>
+          </div>
+          <button class="login-form__submit">
+            Войти
+          </button>
+          <a href="./recovery.html" class="login-form__forgetPassword">
+            Забыли пароль ?
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__content">
+        <h1 class="header__logo">
+          <a href="/"><img src="./assets/media/images/logo.png" alt="vipsellbit"></a>
+        </h1>
+        <div class="header__operatorBox">
+          <span class="header__operatorBox_oper">
+            <i class="fa fa-eercast" aria-hidden="true"></i> Оператор в сети
+          </span>
+          <span class="header__operatorBox_email">
+            <i class="fa fa-envelope"></i> info@vipsellbit.cc
+          </span>
+          <div class="header__burgerMenu_toggler">
+            <button>
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="header__loginReg">
+          <a href="./register.html" class="header__loginReg_reg">
+            <i class="fa fa-plus"></i> Регистрация
+          </a>
+          <button class="header__loginReg_login">
+            <i class="fa fa-user-circle-o"></i> Вход
+          </button>
+
+          <div class="header__burgerMenu collapsed">
+            <div class="container">
+              <ul class="burgerMenu__content">
+                <li class="nav__content_item">
+                  <a href="/">
+                    <i class="fa fa-rocket"></i> Главная
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./tariffs.html">
+                    <i class="fa fa-map-signs"></i> Тарифы
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./feedbacks.html">
+                    <i class="fa fa-child"></i> Отзывы
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./rules.html">
+                    <i class="fa fa-balance-scale"></i> Правила
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./news.html">
+                    <i class="fa fa-newspaper-o"></i> Новости
+                  </a>
+                </li>
+                <li class="nav__content_item">
+                  <a href="./contact.html">
+                    <i class="fa fa-volume-control-phone"></i> Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav__content">
+        <li class="nav__content_item">
+          <a href="/">
+            <i class="fa fa-rocket"></i> Главная
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./tariffs.html">
+            <i class="fa fa-map-signs"></i> Тарифы
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./feedbacks.html">
+            <i class="fa fa-child"></i> Отзывы
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./rules.html">
+            <i class="fa fa-balance-scale"></i> Правила
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./news.html">
+            <i class="fa fa-newspaper-o"></i> Новости
+          </a>
+        </li>
+        <li class="nav__content_item">
+          <a href="./contact.html">
+            <i class="fa fa-volume-control-phone"></i> Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="home">
+    <div class="container">
+      <div class="home__content">
+        <div class="home__safety">
+          <h2 class="home__safety_content">
+            <i class="fa fa-user-secret"></i> Безопасный обмен за несколько минут
+          </h2>
+        </div>
+
+        <div class="home__services">
+          <div class="home__services_col1">
+            <div class="home__services_change">
+              <h3 class="change__heading">
+                Выберите направление обмена
+              </h3>
+              <div class="change__currencies">
+                <div class="change__currencies_give">
+                  <h4 class="give__heading">
+                    <i class="fa fa-paper-plane"></i> Отдаете
+                  </h4>
+                  <button class="give__selection">
+                    <span>Выберите валюту</span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                </div>
+                <div class="change__currencies_loader">
+                  <i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+                </div>
+                <div class="change__currencies_get">
+                  <div class="change__currencies_get">
+                    <h4 class="get__heading">
+                      <i class="fa fa-briefcase"></i> Получаете
+                    </h4>
+                    <button class="get__selection">
+                      <span>Выберите валюту</span>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p class="change__currencies_calculated">
+                Минимальная сумма обмена
+              </p>
+              <button class="change__currencies_accept" type="submit">
+                Обменять <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="home__greeting">
+              <h2 class="home__greeting_heading">
+                Мы рады приветствовать вас VipsellBit
+              </h2>
+              <p class="home__greeting_offer">
+                Мы предлагаем быстрый и качественный современный инструмент для обмена.
+                Предлагаем клиентам только выгодные условия сотрудничества с нашей площадкой.
+              </p>
+              <p class="home__greeting_weHave">
+                У нас есть все, что нужно для абсолютно безопасной конвертации самых популярных
+                направлений. В нашем виртуальном обменном пункте можно быстро и выгодно а главное
+                круглосуточно совершать обменные операции.
+              </p>
+              <div class="home__greeting_img">
+                <img src="./assets/media/images/workspace.png" alt="workspace">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="home__services_col2">
+            <div class="home__reserves">
+              <h2 class="home__reserves_heading">
+                <i class="fa fa-usd"></i> Резервы
+              </h2>
+              <table class="home__reserves_reserveTable">
+                <tbody>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/alfa-bank.png" alt="alfa-bank"></td>
+                    <td class="reserve__name">Альфа-Банк</td>
+                    <td class="reserve__value">388356.44<sup>RUB</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/master-visa.png" alt="visa master card">
+                    </td>
+                    <td class="reserve__name">Visa/MC</td>
+                    <td class="reserve__value">344122.44 <sup>RUB</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/ethereum.png" alt="ethereum"></td>
+                    <td class="reserve__name">Ethereum</td>
+                    <td class="reserve__value">31.84<sup>ETH</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/private24.png" alt="private24"></td>
+                    <td class="reserve__name">Приват24</td>
+                    <td class="reserve__value">211934.44<sup>UAH</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/sberbank.png" alt="sberbank"></td>
+                    <td class="reserve__name">Сбербанк</td>
+                    <td class="reserve__value">547887.44<sup>RUB</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/tinkoff.png" alt="tinkoff"></td>
+                    <td class="reserve__name">Тинькофф</td>
+                    <td class="reserve__value">297844.44<sup>RUB</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/payeer.png" alt="payeer"></td>
+                    <td class="reserve__name">Payeer</td>
+                    <td class="reserve__value">287225<sup>RUB</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/qiwi.png" alt="qiwi"></td>
+                    <td class="reserve__name">Qiwi</td>
+                    <td class="reserve__value">429777.55<sup>RUB</sup></td>
+                  </tr>
+                  <tr class="reserve">
+                    <td class="reserve__img"><img src="./assets/media/images/bitcoin.png" alt="bitcoin"></td>
+                    <td class="reserve__name">Bitcoin</td>
+                    <td class="reserve__value">4.54821777<sup>BTC</sup></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="home__lastRequests">
+              <h2 class="home__lastRequests_heading">
+                <i class="fa fa-history"></i> Последние заявки
+              </h2>
+              <div class="home__lastRequests_requestList">
+                <div class="request">
+                  <span class="request__date">
+                    01.08.2020
+                  </span>
+                  <div class="request__details">
+                    <div class="requests__details_directions">
+                      <p class="details__direction_wallets">
+                        <img src="./assets/media/images/flag-ua.png" alt="ukraine flag">
+                        <span>
+                          <a href="#">Visa/MC</a>
+                          <i class="fa fa-long-arrow-right"></i>
+                          <a href="#">Qiwi</a>
+                        </span>
+                      </p>
+                      <p class="details__direction_value">
+                        <img src="./assets/media/images/master-visa.png" alt="visa master card">
+                        <span>11130.31 <sup>RUB</sup></span>
+                        <br>
+                        <i class="fa fa-exchange"></i>
+                        <br>
+                        <img src="./assets/media/images/qiwi.png" alt="qiwi">
+                        <span>10127.67 <sup>RUB</sup></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="request">
+                  <span class="request__date">
+                    01.08.2020
+                  </span>
+                  <div class="request__details">
+                    <div class="requests__details_directions">
+                      <p class="details__direction_wallets">
+                        <img src="./assets/media/images/flag-ru.png" alt="russia flag">
+                        <span>
+                          <a href="#">Qiwi</a>
+                          <i class="fa fa-long-arrow-right"></i>
+                          <a href="#">Visa/MC</a>
+                        </span>
+                      </p>
+                      <p class="details__direction_value">
+                        <img src="./assets/media/images/qiwi.png" alt="qiwi">
+                        <span>20566.68 <sup>RUB</sup></span>
+                        <br>
+                        <i class="fa fa-exchange"></i>
+                        <br>
+                        <img src="./assets/media/images/master-visa.png" alt="visa master card">
+                        <span>20084.85 <sup>RUB</sup></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="request">
+                  <span class="request__date">
+                    01.08.2020
+                  </span>
+                  <div class="request__details">
+                    <div class="requests__details_directions">
+                      <p class="details__direction_wallets">
+                        <img src="./assets/media/images/flag-ru.png" alt="russia flag">
+                        <span>
+                          <a href="#">Qiwi</a>
+                          <i class="fa fa-long-arrow-right"></i>
+                          <a href="#">Тинькофф</a>
+                        </span>
+                      </p>
+                      <p class="details__direction_value">
+                        <img src="./assets/media/images/qiwi.png" alt="qiwi">
+                        <span>2692.28 <sup>RUB</sup></span>
+                        <br>
+                        <i class="fa fa-exchange"></i>
+                        <br>
+                        <img src="./assets/media/images/tinkoff.png" alt="tnikoff">
+                        <span>2629.43 <sup>RUB</sup></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="home__feedbacks">
+              <h2 class="home__feedbacks_heading">
+                <i class="fa fa-child"></i> Отзывы
+              </h2>
+              <a href="./feedbacks.html" class="feedvacks__all">
+                <i class="fa fa-comments"></i> смотреть все
+              </a>
+              <div class="feedbacks__carousel">
+                <div class="feedbacks__carousel_stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p class="feedbacks__userAndDate">
+                  от <i class="fa fa-user-o"></i> <b>User</b>, <i class="fa fa-clock-o"></i> 02.08.2020
+                </p>
+                <p class="feedbacks__comment">
+                  Все отлично.
+                </p>
+                <div class="feedbacks__disks">
+                  <span class="feedbacks__disks_disk active"></span>
+                  <span class="feedbacks__disks_disk"></span>
+                  <span class="feedbacks__disks_disk"></span>
+                  <span class="feedbacks__disks_disk"></span>
+                  <span class="feedbacks__disks_disk"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <h4 class="footer__year">
+          2020 Обменник валют
+        </h4>
+        <ul class="footer__nav">
+          <li class="footer__nav_link"><a href="./index.html">Главная</a></li>
+          <li class="footer__nav_link"><a href="./tariffs.html">Тарифы</a></li>
+          <li class="footer__nav_link"><a href="./feedbacks.html">Отзывы</a></li>
+          <li class="footer__nav_link"><a href="./rules.html">Правила</a></li>
+          <li class="footer__nav_link"><a href="./news.html">Новости</a></li>
+          <li class="footer__nav_link"><a href="./contact.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
