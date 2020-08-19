@@ -19,13 +19,13 @@ try {
   const $loginBtn = document.querySelector('.header__loginReg_login');
   const $loginModal = document.querySelector('.login-modal');
 
-  $loginBtn.addEventListener('click' , () => {
+  $loginBtn.addEventListener('click', () => {
     $loginModal.classList.remove('hidden');
     document.body.classList.add('modal-open');
   });
 
   window.addEventListener('click', (e) => {
-    if(e.target === $loginModal) {
+    if (e.target === $loginModal) {
       $loginModal.classList.add('hidden');
       document.body.classList.remove('modal-open');
     }
@@ -54,9 +54,9 @@ try {
   });
 
   window.addEventListener('click', () => {
-    if($myAccountNav.classList.contains('show')) {
-    $myAccountBtn.classList.remove('show');
-    $myAccountNav.classList.remove('show');
+    if ($myAccountNav.classList.contains('show')) {
+      $myAccountBtn.classList.remove('show');
+      $myAccountNav.classList.remove('show');
     }
   });
 } catch (e) {
@@ -93,7 +93,7 @@ try {
 
   contactFormInputs.forEach((elem) => {
     elem.addEventListener('change', (e) => {
-      const {name, value} = e.target;
+      const { name, value } = e.target;
       question[name] = value;
     });
   });
@@ -103,7 +103,7 @@ try {
       elem.value = '';
     });
 
-    for(let key in question) {
+    for (let key in question) {
       question[key] = '';
     }
   }
@@ -111,9 +111,9 @@ try {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const {name, email, topic, message, numbers} = question;
+    const { name, email, topic, message, numbers } = question;
 
-    if(name && email && topic && message && numbers) {
+    if (name && email && topic && message && numbers) {
       window.location.href = 'contact-sent.html';
       clearFields();
     } else {
@@ -156,26 +156,26 @@ try {
 
   feedbackFormInputs.forEach((elem) => {
     elem.addEventListener('change', (e) => {
-      const {name, value} = e.target;
+      const { name, value } = e.target;
 
       feedback[name] = value;
     })
   })
-  
+
   function clearValue() {
     feedbackFormInputs.forEach((elem) => {
       elem.value = '';
     });
 
-    for(let key in feedback) {
+    for (let key in feedback) {
       feedback[key] = '';
     }
   }
 
   feedbackForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const {name, comment, number} = feedback;
-    if(name.length && comment.length && number.length) {
+    const { name, comment, number } = feedback;
+    if (name.length && comment.length && number.length) {
       window.location.href = 'feedback-sent.html';
       clearValue();
     } else {
