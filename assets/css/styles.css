@@ -1760,43 +1760,44 @@ button:focus {
   margin-bottom: 10px;
 }
 
+
 .confirm__table {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.confirm__table_details {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.confirm__table_details tbody tr:nth-child(2n + 1) {
+.confirm__table .confirm__table_details:nth-child(2n + 1) {
   background-color: #eee;
 }
-
-.confirm__table_details tbody tr.table__details:last-child {
-  background-color: #ccc;
-}
-
-.table__details_property,
-.table__details_value {
+.confirm__table_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   border: solid 1px #ddd;
+}
+.details__property {
+  width: 30%;
+  padding: 8px;
+  border-right: solid 1px #ddd;
+  font-size: 14px;
+}
+.details__value {
+  width: 70%;
   padding: 8px;
   font-size: 14px;
 }
 
-.table__details_property.final,
-.table__details_value.final {
+.confirm__table_details.final .details__property,
+.confirm__table_details.final .details__value {
   font-size: 22px;
   font-weight: 400;
   color: #444;
 }
-
-.table__details_property {
-  width: 30%;
-}
-
-.table__details_value {
-  width: 70%;
+.confirm__table .confirm__table_details.final:last-child {
+  background-color: #ccc;
 }
 
 .confirm__button {
@@ -3018,15 +3019,28 @@ button:focus {
   .contact__form {
     margin-top: 15px;
   }
+
+
   /*
   *** Exchange confirm
   */
-  .confirm__table {
-    overflow-x: scroll;
-  }
+
   .confirm__table_details {
-    min-width: 585px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
   }
+  .details__property {
+    border-right: none;
+  }
+  .details__property,
+  .details__value {
+    padding: 2px 0;
+    width: 100%;
+  }
+
+
+
   /*
   *** Exchange
   */
