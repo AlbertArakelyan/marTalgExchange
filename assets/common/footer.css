@@ -7,12 +7,6 @@
 .footer__content {
   color: #eee;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
-}
-.footer__nav {
-  display: flex;
-}
-.footer__nav > :nth-child(n) {
-  margin: 0 5px;
 }

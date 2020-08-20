@@ -2834,7 +2834,7 @@ button:focus {
   }
   .tariffs__change {
     flex-direction: column;
-    padding: 10px 15px 0 !important;
+    padding: 10px 15px !important;
   }
   .tariffs__table_arrow {
     display: none;
@@ -2845,7 +2845,7 @@ button:focus {
     justify-content: flex-start !important;
   }
   .tariffs__table_get {
-    margin: 10px 0;
+    margin: 5px 0;
   }
   .give__details_quantity::before {
     content: "Отдаете: ";
@@ -3144,15 +3144,6 @@ button:focus {
   /*
   *** Tariffs
   */
-  /*.tariffs__table_give {*/
-  /*  flex-direction: column;*/
-  /*  align-items: flex-start !important;*/
-  /*}*/
-  .tariffs__table_get {
-    /*flex-direction: column;*/
-    /*align-items: flex-start !important;*/
-    margin-top: 10px !important;
-  }
   .give__details_quantity,
   .give__details_name,
   .get__details_quantity,
