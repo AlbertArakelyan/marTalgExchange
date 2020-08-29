@@ -171,7 +171,6 @@ button:focus {
 
 .login-form {
   background: #F9F9F9;
-  padding: 10px;
   border-radius: 10px;
   width: 100%;
   display: flex;
@@ -297,6 +296,7 @@ button:focus {
   font-size: 29px;
 }
 
+
 .tariffs__table {
   width: 100%;
   margin-top: 15px;
@@ -306,51 +306,7 @@ button:focus {
   justify-content: center;
 }
 
-.tariffs__table_list {
-  width: 100%;
-}
 
-.tariffs__table_list tr:hover {
-  cursor: pointer;
-}
-
-.tariffs__table_list tr.tariffs__section:hover {
-  cursor: initial;
-}
-
-.tariffs__table_list .tariffs__table_heading:hover {
-  cursor: initial;
-}
-
-.tariffs__table_list th {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
-  text-align: center;
-  background-color: #eee;
-  font-size: 15px;
-  border-top: 1px solid #ddd;
-}
-
-.tariffs__table_list>tbody>tr>td {
-  border-top: 1px solid #ddd;
-}
-
-.tariffs__table_give {
-  width: 35%;
-}
-
-.tariffs__table_get {
-  width: 40%;
-}
-
-.tariffs__table_arrow {
-  width: 5%;
-}
-
-.tariffs__table_reserve {
-  width: 25%;
-}
 
 .tariffs__section {
   background-color: #f27713;
@@ -377,14 +333,6 @@ button:focus {
 .get__details {
   width: 100%;
 }
-
-
-/* .give__details_quantity, .get__details_quantity {
-  width: 55%;
-}
-.give__details_name, .get__details_name {
-  width: 45%;
-} */
 
 .give__details p,
 .get__details p {
@@ -424,7 +372,6 @@ button:focus {
 }
 
 
-/* new styling*/
 
 .tariffs__table_heading,
 .tariffs__change {
@@ -571,9 +518,7 @@ button:focus {
 }
 
 .feedbacks__list_row {
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 100%; */
+
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -581,10 +526,7 @@ button:focus {
 }
 
 .feedback {
-  /* display: flex;
-  flex-direction: column;
-  padding: 15px 5px; */
-  /* width: 30%; */
+
   margin: 0 10px;
   background-color: white;
   border-radius: 10px;
@@ -1298,6 +1240,14 @@ button:focus {
 
 
 /*
+*** sign in page
+*/
+
+
+
+
+
+/*
 *** Exchange page
 */
 
@@ -1934,7 +1884,6 @@ button:focus {
 #details.confirm__table .confirm__table_details .details__property {
   border-right: none;
 }
-
 
 /*
 *** Exchange pay 2
@@ -2823,12 +2772,6 @@ button:focus {
   /*
   *** Tariffs
   */
-  /* .tariffs__table {
-    overflow-x: scroll;
-  }
-  .tariffs__table_list {
-    width: 1050px;
-  } */
   .tariffs__table_heading {
     display: none;
   }

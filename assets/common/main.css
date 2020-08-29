@@ -212,16 +212,6 @@
   margin-bottom: 10px;
 }
 
-.home__reserves_reserveTable,
-.home__reserves_reserveTable tbody {
-  width: 100%;
-}
-.reserve {
-  width: 100%;
-}
-.reserve > :nth-child(n) {
-  padding: 7px 0;
-}
 .reserve__img {
   width: 15%;
 }
@@ -245,6 +235,23 @@
   font-size: 75%;
   margin-left: 3px;
 }
+
+.home__reserves_lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.reserves__lists_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 7px 0;
+}
+
 
 
 /*

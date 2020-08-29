@@ -34,7 +34,6 @@
         </div>
       </div>
       <div class="header__loginReg">
-
         <a href="./register.html" class="header__loginReg_reg">
           <i class="fa fa-plus"></i> Регистрация
         </a>
@@ -120,89 +119,45 @@
   </div>
 </nav>
 
-<div class="confirm">
+<div class="register">
   <div class="container">
-    <div class="confirm__content">
-      <h2 class="confirm__heading">
-        Обмен <img src="./assets/media/images/payeer.png" alt="payeer">
-        Payeer <i class="fa fa-long-arrow-right"></i>
-        <img src="./assets/media/images/bitcoin.png" alt="bitcoin"> Bitcoin
-      </h2>
-      <p class="confirm__warning">
-        Внимательно проверьте правильность платежных данных перед созданием заявки
-      </p>
-      <h3 class="confirm__subheading">
-        Подтверждение заявки
-      </h3>
-      <div class="confirm__table">
-
-        <ul class="confirm__table_details">
-          <li class="details__property">
-            <i class="fa fa-arrow-up" style="color: #8dc6fb"></i> Отдаете:
-          </li>
-          <li class="details__value">
-            <span><b>10000</b></span> RUB
-          </li>
-        </ul>
-
-        <ul class="confirm__table_details">
-          <li class="details__property">
-            Номер Payeer Кошелка:
-          </li>
-          <li class="details__value">
-            P5249631492
-          </li>
-        </ul>
-
-        <ul class="confirm__table_details">
-          <li class="details__property">
-            <i class="fa fa-arrow-down" style="color: #5cb85c"></i> Получаете:
-          </li>
-          <li class="details__value">
-            <span><b>0.01175234</b></span> BTC
-          </li>
-        </ul>
-
-        <ul class="confirm__table_details">
-          <li class="details__property">
-            Номер Кошелка:
-          </li>
-          <li class="details__value">
-            nNfUi34h78Iudh782y87Yeg89sJgohGsd8h
-          </li>
-        </ul>
-
-        <ul class="confirm__table_details">
-          <li class="details__property">
-            Курс обмена:
-          </li>
-          <li class="details__value">
-            850894.22 RUB - 1 BTC
-          </li>
-        </ul>
-
-        <ul class="confirm__table_details">
-          <li class="details__property">
-            E-mail:
-          </li>
-          <li class="details__value">
-            user@example.com
-          </li>
-        </ul>
-
-        <ul class="confirm__table_details final">
-          <li class="details__property">
-            К оплате:
-          </li>
-          <li class="details__value">
-            10000 RUB
-          </li>
-        </ul>
-
+    <div class="reigster__content">
+      <div class="register__form">
+        <div class="register__form_heading">
+          <h2 class="form__heading_text">
+            <i class="fa fa-user-circle-o"></i> Вход
+          </h2>
+        </div>
+        <form class="login-form">
+          <div class="login-form__formgroup">
+            <label for="login" class="login-form__login_label">
+              Ваш логин
+            </label>
+            <input type="text" name="login" class="login-form__login_input" placeholder="Ваш логин">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="password" class="login-form__password_label">
+              Ваш пароль
+            </label>
+            <input type="password" name="password" class="login-form__password_input" placeholder="Ваш Пароль">
+          </div>
+          <div class="login-form__formgroup">
+            <label for="nunber" class="login-form__confirm_label">
+              Введите цыфры
+            </label>
+            <div class="login-form__confirm_codeAndField">
+              <input name="number" type="text" class="login-form__confirm_field">
+              <img src="./assets/media/images/number.png" alt="numbers" class="login-form__cinfirm_code">
+            </div>
+          </div>
+          <button class="login-form__submit">
+            Войти
+          </button>
+          <a href="./recovery.html" class="login-form__forgetPassword">
+            Забыли пароль ?
+          </a>
+        </form>
       </div>
-      <a href="./exchange-pay.html" class="confirm__button">
-        Создать заявку
-      </a>
     </div>
   </div>
 </div>

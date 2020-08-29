@@ -12,36 +12,6 @@ try {
 }
 
 
-
-
-/**** Login modal ****/
-try {
-  const $loginBtn = document.querySelector('.header__loginReg_login');
-  const $loginModal = document.querySelector('.login-modal');
-
-  $loginBtn.addEventListener('click', () => {
-    $loginModal.classList.remove('hidden');
-    document.body.classList.add('modal-open');
-  });
-
-  window.addEventListener('click', (e) => {
-    if (e.target === $loginModal) {
-      $loginModal.classList.add('hidden');
-      document.body.classList.remove('modal-open');
-    }
-  })
-
-  const $loginModalCloseBtn = document.querySelector('.modal-content__close');
-  $loginModalCloseBtn.addEventListener('click', () => {
-    $loginModal.classList.add('hidden');
-    document.body.classList.remove('modal-open');
-  });
-} catch (e) {
-
-}
-
-
-
 /**** My account nav ****/
 try {
   const $myAccountBtn = document.querySelector('.header__myAccount_btn');
@@ -66,20 +36,6 @@ try {
 
 /***** Contact *****/
 try {
-  // const $sendModal = document.querySelector('.contact__form_submit');
-  // const $messageModal = document.querySelector('.message-modal');
-
-  // $sendModal.addEventListener('click' , (e) => {
-  //   e.preventDefault();
-  //   $messageModal.classList.remove('hidden');
-  // });
-
-  // window.addEventListener('click', (e) => {
-  //   if(e.target === $messageModal) {
-  //     $messageModal.classList.add('hidden');
-  //   }
-  // })
-
   const contactForm = document.querySelector('.contact__form');
   const contactFormInputs = document.querySelectorAll('.contact__form input, .contact__form textarea');
 
@@ -114,11 +70,11 @@ try {
     const { name, email, topic, message, numbers } = question;
 
     if (name && email && topic && message && numbers) {
+      clearFields();
       window.location.href = 'contact-sent.html';
-      clearFields();
     } else {
-      window.location.href = 'contact-failed.html';
       clearFields();
+      window.location.href = 'contact-failed.html';
     }
 
   })
@@ -130,21 +86,6 @@ try {
 
 /**** Feedbacks ****/
 try {
-
-  // const $sendModal = document.querySelector('.feedbacks__form form button');
-  // const $messageModal = document.querySelector('.message-modal');
-
-  // $sendModal.addEventListener('click' , (e) => {
-  //   e.preventDefault();
-  //   $messageModal.classList.remove('hidden');
-  // });
-
-  // window.addEventListener('click', (e) => {
-  //   if(e.target === $messageModal) {
-  //     $messageModal.classList.add('hidden');
-  //   }
-  // })
-
   const feedback = {
     name: '',
     comment: '',
@@ -222,3 +163,4 @@ try {
 } catch (e) {
 
 }
+
